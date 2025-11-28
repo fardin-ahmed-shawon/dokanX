@@ -1,1 +1,1 @@
-#dokanX
+#DokanX is a SaaS e-commerce platform by Easy Tech Solutions, built for entrepreneurs and SMEs to manage products, orders, customers, payments, and inventory in one powerful, secure dashboard.

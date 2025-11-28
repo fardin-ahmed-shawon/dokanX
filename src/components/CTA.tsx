@@ -33,7 +33,7 @@ export const CTA = () => {
               className="text-lg px-10 py-7 bg-primary-foreground text-primary hover:bg-background hover:text-foreground transition-all duration-300 shadow-strong group"
               asChild
             >
-              <a href="https://wa.me/8801580741616" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/8801580741616?text=Hello%20I%20am%20interested" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Contact 
               </a>
