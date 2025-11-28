@@ -53,7 +53,7 @@ export const Footer = () => {
               alt="DokanX Logo"
             />
             <p className="text-sm text-muted-foreground">
-              E-Commerce Platform as a Service. Launch your online store with enterprise-grade features.
+              Your Complete E-Commerce Platform as a Service. Launch your online store with enterprise-grade features.
             </p>
           </div>
 
