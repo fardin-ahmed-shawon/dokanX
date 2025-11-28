@@ -1,10 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./ThemeToggle";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import LIGHTLOGO from '../../public/dokanx-white.png';
+import DARKLOGO from '../../public/dokanx-black.png';
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+    
+    setTheme(initialTheme);
+    document.documentElement.classList.toggle("dark", initialTheme === "dark");
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -21,7 +33,7 @@ export const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity">
-              DokanX
+              <img style={{width: '160px'}} src={theme === "light" ? DARKLOGO : LIGHTLOGO} alt="DokanX Logo" />
             </button>
           </div>
 
@@ -40,7 +52,7 @@ export const Navbar = () => {
 
           {/* Right side */}
           <div className="flex items-center gap-4">
-            <ThemeToggle />
+            <ThemeToggle setTheme={setTheme} />
             <Button onClick={() => scrollToSection('contact')} className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground transition-all duration-300">
               Get Demo
             </Button>
