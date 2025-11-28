@@ -17,13 +17,16 @@ export const CTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-            <Button 
-              size="lg" 
-              className="text-lg px-10 py-7 bg-primary-foreground text-primary hover:bg-background hover:text-foreground transition-all duration-300 shadow-strong group"
-            >
-              Get Your Demo
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <a href="https://react-easy-commere.easytechsolutions.xyz/" target="_blank">
+              <Button 
+                size="lg" 
+                className="text-lg px-10 py-7 bg-primary-foreground text-primary hover:bg-background hover:text-foreground transition-all duration-300 shadow-strong group"
+              >
+                
+                See Demo
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
             <Button 
               size="lg" 
               variant="outline"
@@ -40,7 +43,7 @@ export const CTA = () => {
           <div className="pt-12 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm">
             <div className="flex items-center gap-2">
               <Mail className="h-5 w-5" />
-              <span>contact@easytechx.com</span>
+              <span>info@dokanxbd.com</span>
             </div>
             <div className="hidden sm:block h-4 w-px bg-primary-foreground/30" />
             <div className="flex items-center gap-2">

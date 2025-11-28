@@ -35,7 +35,7 @@ export const Hero = () => {
           </div>
 
           {/* Main headline */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight">
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-black tracking-tight">
             <span className="block mb-2">DokanX</span>
             <span className="block bg-gradient-to-r from-foreground via-muted-foreground to-foreground bg-clip-text text-transparent">
               Complete E-Commerce
@@ -47,9 +47,11 @@ export const Hero = () => {
 
           {/* Description */}
           <p className="max-w-3xl text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Launch your online store in minutes with our powerful, feature-rich platform. 
+            DokanX is a React. js-powered SaaS e-commerce platform by Easy Tech Solutions, designed for entrepreneurs and SMEs to easily manage products, customers, payments, inventory, and logistics in one seamless, fast, and secure system. Launch your online store in minutes with our powerful, feature-rich platform. 
+          
+            {/* Launch your online store in minutes with our powerful, feature-rich platform. 
             Choose between PHP or React.js, complete with admin dashboard, payment integration, 
-            and 27+ advanced features.
+            and 27+ advanced features. */}
           </p>
 
           {/* CTA Buttons */}
