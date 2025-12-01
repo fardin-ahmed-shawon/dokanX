@@ -5,15 +5,6 @@ import { ExternalLink, Sparkles } from "lucide-react";
 import { useState } from "react";
 import { FeatureDetailsModal } from "./FeatureDetailsModal";
 
-const phpFeatures = [
-  "Complete PHP Backend",
-  "MySQL Database",
-  "Responsive Design",
-  "Mobile Optimized",
-  "Courier Integration",
-  "27 Admin Features"
-];
-
 const reactFeatures = [
   "React.js Frontend",
   "Modern UI/UX",
@@ -40,70 +31,16 @@ export const TechStack = () => {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">
-            Choose Your Technology Stack
+            Build Your Store With the Right Technology
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Pick the platform that best fits your technical requirements
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {/* PHP Version */}
-          <Card className="border-2 hover:border-primary transition-all duration-500 hover:shadow-strong group relative overflow-hidden animate-fade-in-up">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-accent/0 group-hover:from-primary/5 group-hover:to-accent/5 transition-all duration-500" />
-            
-            <CardHeader className="space-y-4 relative">
-              <div className="flex items-center justify-between">
-                <Badge variant="outline" className="text-base px-4 py-1">PHP</Badge>
-                <Badge className="bg-primary text-primary-foreground">Classic</Badge>
-              </div>
-              <CardTitle className="text-3xl group-hover:text-primary transition-colors duration-300">PHP E-Commerce</CardTitle>
-              <CardDescription className="text-base">
-                Robust and reliable traditional e-commerce platform
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-6 relative">
-              <ul className="space-y-3">
-                {phpFeatures.map((feature, index) => (
-                  <li key={index} className="flex items-center gap-3 group/item">
-                    <div className="h-2 w-2 rounded-full bg-primary group-hover/item:scale-125 transition-transform" />
-                    <span className="text-muted-foreground group-hover/item:text-foreground transition-colors">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <div className="pt-4 space-y-3">
-                <Button 
-                  onClick={() => setPhpModalOpen(true)}
-                  variant="outline"
-                  className="w-full group/btn"
-                >
-                  <Sparkles className="mr-2 h-4 w-4 group-hover/btn:text-primary transition-colors" />
-                  See All Features (51+)
-                </Button>
-                <Button 
-                  className="w-full bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground transition-all duration-300"
-                  asChild
-                >
-                  <a href="https://easytechsolutions.xyz/easy_data/easy_commerce/" target="_blank" rel="noopener noreferrer">
-                    View User Panel
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
-                <Button 
-                  variant="outline" 
-                  className="w-full"
-                  asChild
-                >
-                  <a href="https://easytechsolutions.xyz/easy_data/easy_commerce/Admin/login.php" target="_blank" rel="noopener noreferrer">
-                    View Admin Dashboard
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-5xl mx-auto place-items-center">
 
+          
           {/* React Version */}
           <Card className="border-2 border-primary hover:shadow-strong transition-all duration-500 group relative overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
             <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-primary/20 to-accent/20 rounded-bl-full blur-2xl" />
@@ -142,7 +79,7 @@ export const TechStack = () => {
                   className="w-full bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground transition-all duration-300"
                   asChild
                 >
-                  <a href="https://react-easy-commere.easytechsolutions.xyz/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://user-demo.dokanxbd.com/" target="_blank" rel="noopener noreferrer">
                     View User Panel
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
@@ -152,7 +89,7 @@ export const TechStack = () => {
                   className="w-full border-primary"
                   asChild
                 >
-                  <a href="https://react-easy-commere.easytechsolutions.xyz/Admin/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://admin-demo.dokanxbd.com/Admin/" target="_blank" rel="noopener noreferrer">
                     View Admin Dashboard
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
